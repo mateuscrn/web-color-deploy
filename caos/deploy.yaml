@@ -42,8 +42,8 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: web
 spec:
-  maxReplicas: 1
-  minReplicas: 10
+  maxReplicas: 10
+  minReplicas: 1
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
